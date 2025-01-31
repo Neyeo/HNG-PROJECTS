@@ -32,9 +32,7 @@ This guide documents the step-by-step process to set up and configure NGINX on a
 
 
 #### **Step 2: SSH Command**
-- Use the following command to connect to your instance:
-  ```bash
-  ssh -i "Jackson.pem" ubuntu@16.170.215.116
+- Use the following command to connect to your instance:  **ssh -i "Jackson.pem" ubuntu@16.170.215.116**
 
 
   ![Connected instance](./img/SSHINTOINSTNACE1.jpg)
@@ -56,15 +54,15 @@ This guide documents the step-by-step process to set up and configure NGINX on a
 
 ![screenshot of installed nginx](./img/Installnginx.jpg)
 
-### **Step 4. 
+### **Step4. 
 
 ### **4. Configure the Web Server**
 
 #### **step 1:Open the Nginx configuration file and edit the default web page**
 - using the command: **sudo nano /var/www/html/index.html** to open the nginx
 - Add the following content:
-     ```bash
-      <!DOCTYPE html>
+```bash
+echo '<!DOCTYPE html>
 <html>
 <head>
     <title>DevOps Stage 0</title>
@@ -72,7 +70,8 @@ This guide documents the step-by-step process to set up and configure NGINX on a
 <body>
     <h1>Welcome to DevOps Stage 0 - [Gbeminiyi]/[Adewusi Adegbeminiyi]</h1>
 </body>
-</html>
+</html>' | sudo tee /var/www/html/index.html
+```
 
 - Restart Nginx using the command: **sudo systemctl restart nginx** to apply changes.
 

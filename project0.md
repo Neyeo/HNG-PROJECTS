@@ -93,7 +93,7 @@ echo '<!DOCTYPE html>
 ### **6.  Testing and Verifying Deployment**
 
 #### **step1: Access the browser using the internet**
-- Using: http://<your-server-ip>/ (16.170.215.116)
+- Using: http://<your-server-ip>/ (http://51.20.4.229/)
  
  ![webserver](./img/loadingweb.jpg)
 

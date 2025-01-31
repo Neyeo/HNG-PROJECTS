@@ -23,7 +23,7 @@ This guide documents the step-by-step process to set up and configure NGINX on a
 - Configure instance details, such as network and storage settings, if needed.
 - Review and launch the instance. During launch, create or select an existing key pair for SSH access.
 
-![screenshot of my aws console and instance](./Screenshot%202025-01-31%20122829.jpg)
+![screenshot of my aws console and instance](./img/Screenshot%202025-01-31%20122829.jpg)
 
 #### **Step 2: SSH into your EC2 Instance**
 
@@ -37,7 +37,7 @@ This guide documents the step-by-step process to set up and configure NGINX on a
   ssh -i "Jackson.pem" ubuntu@16.170.215.116
 
 
-  ![Connected instance](./SSHINTOINSTNACE.jpg)
+  ![Connected instance](./img/SSHINTOINSTNACE1.jpg)
 
 
 ###  **Install and Configure Nginx**
@@ -54,7 +54,7 @@ This guide documents the step-by-step process to set up and configure NGINX on a
 - **sudo systemctl start nginx**
 - **sudo systemctl enable nginx**
 
-![screenshot of installed nginx](./Installnginx.jpg)
+![screenshot of installed nginx](./img/Installnginx.jpg)
 
 ### **Step 4. 
 
@@ -76,7 +76,7 @@ This guide documents the step-by-step process to set up and configure NGINX on a
 
 - Restart Nginx using the command: **sudo systemctl restart nginx** to apply changes.
 
-![default webpage](./HTML%20page.jpg)
+![default webpage](./img/HTML%20page.jpg)
 
 ### **5.  Ensuring Correct NGINX Configuration**
 
@@ -88,20 +88,14 @@ This guide documents the step-by-step process to set up and configure NGINX on a
  - Using the command: **sudo nginx -t**
  - Restart the NGINX: Using the command **sudo systemctl restart Nginx**
 
- ![Correct directory](./Listen.jpg)
+ ![Correct directory](./img/Listen.jpg)
 
 ### **6.  Testing and Verifying Deployment**
 
 #### **step1: Access the browser using the internet**
 - Using: http://<your-server-ip>/ (16.170.215.116)
-
-![screenshot of Q servers dns configuration](/img/10th.jpg)
-
-
-#### **step2: Configure DNS Records in Route 53.**
--If using AWS Route 53 for DNS management, create an A record that points your domain to your EC2 instance’s Elastic IP.
-
-![webserver](./loadingweb.jpg)
+ 
+ ![webserver](./img/loadingweb.jpg)
 
  **Troubleshooting Common Issues**
  - Allow HTTP traffic: Using the command **sudo ufw allow 'Nginx Full'**, Ensure cloud provider security group allows inbound port 80.

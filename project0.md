@@ -1,7 +1,7 @@
  # **NGINX CONFIGURATION GUIDE**
 
 ## **Introduction**
-As part of the HNG Internship DevOps Stage 0 task, I was given the challenge of setting up and configuring NGINX on a fresh Ubuntu server. This task aimed to test my ability to deploy a basic web server and ensure proper configuration. Below, I share my approach, challenges, and key takeaways from this experience.
+As part of the HNG Internship DevOps Stage 0 task, I was given the challenge of setting up and configuring NGINX on a fresh Ubuntu server. This task aimed to test my ability to deploy a basic web server and ensure proper configuration. Below, I share my approach, challenges, and key takeaways from this experience, ny the way HNG is currently hiring https://hng.tech/hire/devops-engineers.
 
 ### **Project Overview**
 This guide documents the step-by-step process to set up and configure NGINX on an Ubuntu server as part of the HNG Internship - DevOps Stage 0 task. It includes installation steps, configurations, challenges encountered, and solutions.
